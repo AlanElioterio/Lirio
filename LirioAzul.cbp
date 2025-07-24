@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="LirioAzul" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/LirioAzul" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="include/menus" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/LirioAzul" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+					<Add directory="include/menus" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="include" />
+		</Compiler>
+		<Unit filename="database/lirio_azul_database.db" />
+		<Unit filename="include/Cliente.h" />
+		<Unit filename="include/DatabaseService.h" />
+		<Unit filename="include/ItemPedido.h" />
+		<Unit filename="include/Pedido.h" />
+		<Unit filename="include/SaborTrufa.h" />
+		<Unit filename="include/TipoTrufa.h" />
+		<Unit filename="include/Trufa.h" />
+		<Unit filename="include/menus/MenuCliente.h" />
+		<Unit filename="include/menus/MenuPedido.h" />
+		<Unit filename="include/menus/MenuTrufa.h" />
+		<Unit filename="include/sqlite3.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="sqlite3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Cliente.cpp" />
+		<Unit filename="src/DatabaseService.cpp" />
+		<Unit filename="src/ItemPedido.cpp" />
+		<Unit filename="src/Pedido.cpp" />
+		<Unit filename="src/SaborTrufa.cpp" />
+		<Unit filename="src/TipoTrufa.cpp" />
+		<Unit filename="src/Trufa.cpp" />
+		<Unit filename="src/menus/MenuCliente.cpp" />
+		<Unit filename="src/menus/MenuPedido.cpp" />
+		<Unit filename="src/menus/MenuTrufa.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

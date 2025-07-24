@@ -1,0 +1,331 @@
+# depslib dependency file v1.0
+1752723451 source:d:\projetos\lirioazul\sqlite3.c
+	<vxWorks.h>
+	<pthread.h>
+	"mingw.h"
+	"_mingw.h"
+	<stdarg.h>
+	"sqlite_cfg.h"
+	<stdint.h>
+	<inttypes.h>
+	<intrin.h>
+	<cmnintrin.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<ctype.h>
+	<TargetConditionals.h>
+	<time.h>
+	<sys/sysctl.h>
+	<malloc/malloc.h>
+	<libkern/OSAtomic.h>
+	<malloc.h>
+	<pthread.h>
+	"windows.h"
+	<sys/cygwin.h>
+	<sys/stat.h>
+	<unistd.h>
+	<errno.h>
+	<process.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/ioctl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/file.h>
+	<sys/param.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/mount.h>
+	<utime.h>
+	<sys/dcmd_blk.h>
+	<sys/statvfs.h>
+	<dlfcn.h>
+	<Windows.h>
+	"tclsqlite.h"
+	"sqlite3rtree.h"
+	<ctype.h>
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+	<math.h>
+
+1752723543 source:d:\projetos\lirioazul\src\itempedido.cpp
+	"ItemPedido.h"
+	<string>
+
+1752723508 d:\projetos\lirioazul\include\itempedido.h
+	<string>
+
+1752723455 source:d:\projetos\lirioazul\src\cliente.cpp
+	"Cliente.h"
+	<string>
+
+1752790673 d:\projetos\lirioazul\include\cliente.h
+	<string>
+
+1752723545 source:d:\projetos\lirioazul\src\enderecocliente.cpp
+	"EnderecoCliente.h"
+	<string>
+
+1752723366 d:\projetos\lirioazul\include\enderecocliente.h
+	<string>
+	<string>
+
+1752794705 source:d:\projetos\lirioazul\main.cpp
+	<iostream>
+	<sqlite3.h>
+	<stdio.h>
+	<vector>
+	<string>
+	"MenuCliente.h"
+	"MenuTrufa.h"
+	"DatabaseService.h"
+
+1751120668 d:\projetos\lirioazul\include\sqlite3.h
+	<stdarg.h>
+
+1752723354 d:\projetos\lirioazul\include\menus\menucliente.h
+
+1752723540 source:d:\projetos\lirioazul\src\pedido.cpp
+	"Pedido.h"
+	<string>
+
+1752723586 d:\projetos\lirioazul\include\pedido.h
+	<string>
+
+1752723538 source:d:\projetos\lirioazul\src\sabortrufa.cpp
+	"SaborTrufa.h"
+	<string>
+
+1752723522 d:\projetos\lirioazul\include\sabortrufa.h
+	<string>
+
+1752723534 source:d:\projetos\lirioazul\src\tipotrufa.cpp
+	"TipoTrufa.h"
+	<string>
+
+1752723526 d:\projetos\lirioazul\include\tipotrufa.h
+	<string>
+
+1752792287 source:d:\projetos\lirioazul\src\trufa.cpp
+	"Trufa.h"
+	<string>
+
+1752792298 d:\projetos\lirioazul\include\trufa.h
+	<string>
+
+1752723661 source:d:\projetos\lirioazul\src\telefonecliente.cpp
+	"TelefoneCliente.h"
+	<string>
+
+1752723642 d:\projetos\lirioazul\include\telefonecliente.h
+	<string>
+
+1752795419 source:d:\projetos\lirioazul\src\menus\menucliente.cpp
+	<iostream>
+	<sqlite3.h>
+	<stdio.h>
+	<vector>
+	<string>
+	"MenuCliente.h"
+	"Cliente.h"
+	"DatabaseService.h"
+
+1752794506 d:\projetos\lirioazul\include\databaseservice.h
+	<sqlite3.h>
+
+1752794520 source:d:\projetos\lirioazul\src\databaseservice.cpp
+	"DatabaseService.h"
+	<stdio.h>
+
+1752795273 source:d:\projetos\lirioazul\src\menus\menutrufa.cpp
+	"MenuTrufa.h"
+	"Trufa.h"
+	<iostream>
+	<sqlite3.h>
+	<stdio.h>
+	<vector>
+	<string>
+	"DatabaseService.h"
+
+1752794768 d:\projetos\lirioazul\include\menus\menutrufa.h
+
+1752796312 source:c:\towir\lirio\lirio-main\sqlite3.c
+	<vxWorks.h>
+	<pthread.h>
+	"mingw.h"
+	"_mingw.h"
+	<stdarg.h>
+	"sqlite_cfg.h"
+	<stdint.h>
+	<inttypes.h>
+	<intrin.h>
+	<cmnintrin.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<ctype.h>
+	<TargetConditionals.h>
+	<time.h>
+	<sys/sysctl.h>
+	<malloc/malloc.h>
+	<libkern/OSAtomic.h>
+	<malloc.h>
+	<pthread.h>
+	"windows.h"
+	<sys/cygwin.h>
+	<sys/stat.h>
+	<unistd.h>
+	<errno.h>
+	<process.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/ioctl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/file.h>
+	<sys/param.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/mount.h>
+	<utime.h>
+	<sys/dcmd_blk.h>
+	<sys/statvfs.h>
+	<dlfcn.h>
+	<Windows.h>
+	"tclsqlite.h"
+	"sqlite3rtree.h"
+	<ctype.h>
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+	<math.h>
+
+1752796312 source:c:\towir\lirio\lirio-main\src\cliente.cpp
+	"Cliente.h"
+	<string>
+
+1752796312 c:\towir\lirio\lirio-main\include\cliente.h
+	<string>
+
+1752796312 source:c:\towir\lirio\lirio-main\src\enderecocliente.cpp
+	"EnderecoCliente.h"
+	<string>
+
+1752796312 c:\towir\lirio\lirio-main\include\enderecocliente.h
+	<string>
+	<string>
+
+1752796312 source:c:\towir\lirio\lirio-main\src\itempedido.cpp
+	"ItemPedido.h"
+	<string>
+
+1752796312 c:\towir\lirio\lirio-main\include\itempedido.h
+	<string>
+
+1753315455 source:c:\towir\lirio\lirio-main\main.cpp
+	<iostream>
+	<sqlite3.h>
+	<stdio.h>
+	<vector>
+	<string>
+	"MenuCliente.h"
+	"MenuTrufa.h"
+	"DatabaseService.h"
+
+1752796312 c:\towir\lirio\lirio-main\include\sqlite3.h
+	<stdarg.h>
+
+1752796312 c:\towir\lirio\lirio-main\include\menus\menucliente.h
+
+1752796312 c:\towir\lirio\lirio-main\include\menus\menutrufa.h
+
+1752796312 c:\towir\lirio\lirio-main\include\databaseservice.h
+	<sqlite3.h>
+
+1752796312 source:c:\towir\lirio\lirio-main\src\pedido.cpp
+	"Pedido.h"
+	<string>
+
+1752796312 c:\towir\lirio\lirio-main\include\pedido.h
+	<string>
+
+1752796312 source:c:\towir\lirio\lirio-main\src\sabortrufa.cpp
+	"SaborTrufa.h"
+	<string>
+
+1752796312 c:\towir\lirio\lirio-main\include\sabortrufa.h
+	<string>
+
+1752796312 source:c:\towir\lirio\lirio-main\src\telefonecliente.cpp
+	"TelefoneCliente.h"
+	<string>
+
+1752796312 c:\towir\lirio\lirio-main\include\telefonecliente.h
+	<string>
+
+1752796312 source:c:\towir\lirio\lirio-main\src\tipotrufa.cpp
+	"TipoTrufa.h"
+	<string>
+
+1752796312 c:\towir\lirio\lirio-main\include\tipotrufa.h
+	<string>
+
+1752796312 source:c:\towir\lirio\lirio-main\src\trufa.cpp
+	"Trufa.h"
+	<string>
+
+1752796312 c:\towir\lirio\lirio-main\include\trufa.h
+	<string>
+
+1753317421 source:c:\towir\lirio\lirio-main\src\databaseservice.cpp
+	"DatabaseService.h"
+	<stdio.h>
+
+1753317445 source:c:\towir\lirio\lirio-main\src\menus\menucliente.cpp
+	<iostream>
+	<sqlite3.h>
+	<stdio.h>
+	<vector>
+	<string>
+	"MenuCliente.h"
+	"Cliente.h"
+	"DatabaseService.h"
+
+1753317445 source:c:\towir\lirio\lirio-main\src\menus\menutrufa.cpp
+	"MenuTrufa.h"
+	"Trufa.h"
+	<iostream>
+	<sqlite3.h>
+	<stdio.h>
+	<vector>
+	<string>
+	"DatabaseService.h"
+
