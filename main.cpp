@@ -5,6 +5,7 @@
 #include <string>
 #include "MenuCliente.h"
 #include "MenuTrufa.h"
+#include "MenuPedido.h"
 #include "DatabaseService.h"
 
 using namespace std;
@@ -19,21 +20,20 @@ int main() {
     int opcao;
     do {
         system("cls");
-        std::cout << "\n===== MENU GERAL =====\n";
-        std::cout << "1. Área de Clientes \n";
-        std::cout << "2. Área de Trufas\n";
-        std::cout << "3. Área de Pedidos\n";
-        std::cout << "0. Sair\n";
-        std::cout << "Escolha: ";
-        std::cin >> opcao;
-        std::cin.ignore();
+        cout << "\n===== MENU GERAL =====\n";
+        cout << "1. Área de Clientes \n";
+        cout << "2. Área de Trufas\n";
+        cout << "3. Área de Pedidos\n";
+        cout << "0. Sair\n";
+        cout << "Escolha: ";
+        cin >> opcao;
 
         switch (opcao) {
             case 1: MenuCliente::mostrarMenu(); break;
             case 2: MenuTrufa::mostrarMenu(); break;
-            case 3: MenuCliente::mostrarMenu(); break;
-            case 0: std::cout << "Saindo...\n"; break;
-            default: std::cout << "Opção inválida.\n";
+            case 3: MenuPedido::mostrarMenu(); break;
+            case 0: cout << "Saindo...\n"; break;
+            default: cout << "Opção inválida.\n";
         }
     } while (opcao != 0);
 

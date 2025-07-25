@@ -6,6 +6,7 @@ class MenuPedido
 {
     public:
         static void inserirPedido();
+        static void inserirItemPedido(int idPedido, int idTrufa, int quantidade);
         static void listarPedidos();
         static void mostrarMenu();
 };

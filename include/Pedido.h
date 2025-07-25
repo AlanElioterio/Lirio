@@ -10,11 +10,8 @@ class Pedido
         Pedido(int id, int idCliente, string dataPedido);
 
         int GetIdPedido() { return idPedido; }
-        void SetIdPedido(int val) { idPedido = val; }
         int GetIdCliente() { return idCliente; }
-        void SetIdCliente(int val) { idCliente = val; }
         string GetDataPedido() { return dataPedido; }
-        void SetDataPedido(string val) { dataPedido = val; }
 
     protected:
 

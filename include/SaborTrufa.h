@@ -8,10 +8,8 @@ class SaborTrufa
     public:
         SaborTrufa(int id, string sabor);
 
-        string GetSabor() { return sabor; }
-        void SetSabor(string val) { sabor = val; }
-
         int Getid() { return id; }
+        string GetSabor() { return sabor; }
 
     private:
         int id;

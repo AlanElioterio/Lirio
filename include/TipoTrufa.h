@@ -10,9 +10,7 @@ class TipoTrufa
         TipoTrufa(int id, string tipoTrufa);
 
         int Getid() { return id; }
-        void Setid(int val) { id = val; }
         string GetTipoTrufa() { return tipoTrufa; }
-        void SetTipoTrufa(string val) { tipoTrufa = val; }
 
     protected:
 

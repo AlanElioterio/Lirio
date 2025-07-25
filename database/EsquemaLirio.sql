@@ -7,16 +7,6 @@ CREATE TABLE IF NOT EXISTS "Cliente" (
 	"genero"	VARCHAR,
 	PRIMARY KEY("id_cliente" AUTOINCREMENT)
 );
-CREATE TABLE IF NOT EXISTS "EnderecoCliente" (
-	"id_endereco_cliente"	INTEGER NOT NULL UNIQUE,
-	"id_cliente"	INTEGER NOT NULL,
-	"logradouro"	VARCHAR NOT NULL,
-	"id_cidade"	INTEGER NOT NULL,
-	"id_estado"	INTEGER NOT NULL,
-	"id_pais"	INTEGER NOT NULL,
-	PRIMARY KEY("id_endereco_cliente" AUTOINCREMENT),
-	FOREIGN KEY("id_cliente") REFERENCES "Cliente"("id_cliente")
-);
 CREATE TABLE IF NOT EXISTS "ItemPedido" (
 	"id_item_pedido"	INTEGER NOT NULL,
 	"id_pedido"	INTEGER NOT NULL,
@@ -38,15 +28,6 @@ CREATE TABLE IF NOT EXISTS "SaborTrufa" (
 	"id_sabor_trufa"	INTEGER NOT NULL UNIQUE,
 	"sabor"	VARCHAR NOT NULL,
 	PRIMARY KEY("id_sabor_trufa")
-);
-CREATE TABLE IF NOT EXISTS "TelefoneCliente" (
-	"id_telefone_cliente"	INTEGER NOT NULL UNIQUE,
-	"id_cliente"	INTEGER NOT NULL,
-	"codigo_pais"	INTEGER NOT NULL,
-	"ddd"	INTEGER NOT NULL,
-	"telefone"	INTEGER NOT NULL,
-	PRIMARY KEY("id_telefone_cliente" AUTOINCREMENT),
-	FOREIGN KEY("id_cliente") REFERENCES "Cliente"("id_cliente")
 );
 CREATE TABLE IF NOT EXISTS "TipoTrufa" (
 	"id_tipo_trufa"	INTEGER NOT NULL UNIQUE,

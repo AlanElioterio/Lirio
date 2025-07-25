@@ -39,9 +39,11 @@ void MenuCliente::inserirCliente() {
     if (sqlite3_step(stmt) == SQLITE_DONE) {
         cout << "Cliente inserido com sucesso.\n";
     } else {
-        cerr << "Erro ao inserir cliente.\n";
+        cout << "Erro ao inserir cliente.\n";
     }
     sqlite3_finalize(stmt);
+
+    system("pause");
 }
 
 void MenuCliente::listarClientes() {
@@ -60,18 +62,19 @@ void MenuCliente::listarClientes() {
             string dataNascimento = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 3)) ;
             string genero = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 4));
 
-            Cliente cliente(nome, cpf, dataNascimento, genero);
-            cliente.SetId(id);
+            Cliente cliente(nome, cpf, dataNascimento, genero, id);
 
-            std::cout << "ID: " << cliente.GetId() << " | Nome: " << cliente.GetNome() << " | CPF: " << cliente.GetCpf()  << " | Data de Nascimento: " << cliente.GetDataNascimento() << " | Gênero: " << cliente.GetGenero() << "\n";
+            cout << "ID: " << cliente.GetId() << " | Nome: " << cliente.GetNome() << " | CPF: " << cliente.GetCpf()  << " | Data de Nascimento: " << cliente.GetDataNascimento() << " | Gênero: " << cliente.GetGenero() << "\n";
         }
+
 
         sqlite3_finalize(stmt);
 
-        cin.ignore();
+
     } else {
-        cerr << "Erro ao consultar clientes.\n";
+        cout << "Erro ao consultar clientes.\n";
     }
+    system("pause");
 }
 
 void MenuCliente::atualizarCliente() {
@@ -81,7 +84,7 @@ void MenuCliente::atualizarCliente() {
     cout << "Digite o ID do cliente a ser atualizado: ";
     cin >> id;
     cout << "Digite o novo nome: ";
-    getline(cin, novoNome);
+    cin >> novoNome;
 
     string sql = "UPDATE Cliente SET nome = ? WHERE id_cliente = ?;";
     sqlite3_stmt* stmt;
@@ -94,16 +97,16 @@ void MenuCliente::atualizarCliente() {
     if (sqlite3_step(stmt) == SQLITE_DONE) {
         cout << "Cliente atualizado com sucesso.\n";
     } else {
-        cerr << "Erro ao atualizar cliente.\n";
+        cout << "Erro ao atualizar cliente.\n";
     }
     sqlite3_finalize(stmt);
+    system("pause");
 }
 
 void MenuCliente::deletarCliente() {
     int id;
     cout << "Digite o ID do cliente a ser deletado: ";
     cin >> id;
-    cin.ignore();
 
     string sql = "DELETE FROM Cliente WHERE id_cliente = ?;";
     sqlite3_stmt* stmt;
@@ -114,24 +117,24 @@ void MenuCliente::deletarCliente() {
     if (sqlite3_step(stmt) == SQLITE_DONE) {
         cout << "Cliente deletado com sucesso.\n";
     } else {
-        cerr << "Erro ao deletar cliente.\n";
+        cout << "Erro ao deletar cliente.\n";
     }
     sqlite3_finalize(stmt);
+    system("pause");
 }
 
 void MenuCliente::mostrarMenu() {
     int opcao;
     do {
         system("cls");
-        std::cout << "\n===== MENU CLIENTE =====\n";
-        std::cout << "1. Inserir cliente\n";
-        std::cout << "2. Listar clientes\n";
-        std::cout << "3. Atualizar cliente\n";
-        std::cout << "4. Deletar cliente\n";
-        std::cout << "0. Sair\n";
-        std::cout << "Escolha: ";
-        std::cin >> opcao;
-        std::cin.ignore();
+        cout << "\n===== MENU CLIENTE =====\n";
+        cout << "1. Inserir cliente\n";
+        cout << "2. Listar clientes\n";
+        cout << "3. Atualizar cliente\n";
+        cout << "4. Deletar cliente\n";
+        cout << "0. Sair\n";
+        cout << "Escolha: ";
+        cin >> opcao;
 
         switch (opcao) {
             case 1: inserirCliente(); break;
