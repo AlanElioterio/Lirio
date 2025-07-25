@@ -1,4 +1,4 @@
-BEGIN TRANSACTION;
+
 CREATE TABLE IF NOT EXISTS "Cliente" (
 	"id_cliente"	INTEGER NOT NULL,
 	"nome"	VARCHAR NOT NULL,
@@ -44,4 +44,4 @@ CREATE TABLE IF NOT EXISTS "Trufa" (
 	FOREIGN KEY("id_sabor_trufa") REFERENCES "SaborTrufa"("id_sabor_trufa"),
 	FOREIGN KEY("id_tipo_trufa") REFERENCES "TipoTrufa"("id_tipo_trufa")
 );
-COMMIT;
+
